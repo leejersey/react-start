@@ -2,7 +2,7 @@
 FROM node:10.13
 
 # 安装nginx
-RUN apt-get update \    && apt-get install -y nginx
+RUN yum update \    && yum install nginx
 
 # 指定工作目录
 WORKDIR /app
